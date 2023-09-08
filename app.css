@@ -173,22 +173,22 @@
     }
 
     20% {
-        left: calc(100% - 30px);
+        left: calc(100% - 10px);
         top: -10px;
     }
 
     40% {
-        left: calc(100% - 30px);
+        left: calc(100% - 10px);
         top: 55px;
     }
 
     60% {
-        left: -30px;
+        left: -10px;
         top: 55px;
     }
 
     80% {
-        left: -30px;
+        left: -10px;
         top: -10px;
     }
 
@@ -207,12 +207,12 @@
     }
 
     20% {
-        right: calc(100% - 30px);
+        right: calc(100% - 40px);
         bottom: -10px;
     }
 
     40% {
-        right: calc(100% - 30px);
+        right: calc(100% - 40px);
         bottom: 55px;
     }
 
