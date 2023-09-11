@@ -124,7 +124,64 @@
 }
 
 
+
+/* EX 12 */
+
+/* CORRECTION - USING ALTERNATE */
+
+.ex-12-button.v1:hover .ex-12-top-white.v1 {
+    animation: moveMask 1s linear 2 alternate;
+}
+
+.ex-12-bottom-white.v1 {
+    right: 10%
+}
+
+.ex-12-button.v1:hover .ex-12-bottom-white.v1 {
+    animation: moveMask-reverse 1s linear 2 alternate;
+}
+
 @keyframes moveMask {
+
+    0% {
+        left: 10%;
+    }
+
+    100% {
+        left: 60%
+    }
+}
+
+@keyframes moveMask-reverse {
+
+    0% {
+        right: 10%;
+    }
+
+    100% {
+        right: 60%
+    }
+}
+
+/* CORRECTION-V2 - USING ALTERNATE-REVERSE */
+
+.ex-12-button.v2:hover .ex-12-top-white.v2 {
+    animation: moveMask 1s linear 2 alternate;
+}
+
+.ex-12-bottom-white.v2 {
+    left: 60%;
+    right: unset;
+}
+
+.ex-12-button.v2:hover .ex-12-bottom-white.v2 {
+    animation: moveMask 1s linear 2 alternate-reverse;
+}
+
+
+/* -------------- OLD - CAN BE IMPROVED, NOT SYMMETRICAL -------------- */
+
+/* @keyframes moveMask {
 
     0% {
         left: 10%;
@@ -162,8 +219,13 @@
 
 .ex-12-button:hover .ex-12-bottom-white {
     animation: moveMask-reverse 2s linear;
-}
+} */
 
+
+/* EX 13 */
+
+
+/*  -------------- OLD - MISSING STEP AND INCORRECT PERCENTAGES */
 
 @keyframes moveMask-v2 {
 
@@ -232,22 +294,6 @@
     }
     
 }
-
-/* @keyframes moveMask-reverse-v2 {
-
-    0% {
-        right: 20%;
-    }
-
-    50% {
-        right: calc(100% - 30px);
-    }
-
-    100% {
-        right: 20%;
-    }
-    
-} */
 
 .ex-13-button:hover .ex-13-top-white {
     animation: moveMask-v2 2s linear;
